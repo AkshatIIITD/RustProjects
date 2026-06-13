@@ -1,4 +1,4 @@
-My first rust mini-project 
+<b> My first rust mini-project </b>
 
 Convert an image into a braille ascii text terminal output.
 Great for adding custom images in fastfetch output
@@ -10,11 +10,16 @@ for the image provided.
 Examples to get braille (cat2.jpg used with 40 threshold):
 
 For dev mode:
+```
 cargo run images/cat2.jpg 40
+```
 
-
-For prod:
-1. create release:
+For prod (windows example here):
+1. create the release exe:
+    ```
     cargo build --release
+    ```
 2. run the exe:
+    ```
     .\target\release\image_braille_generator.exe images/cat2.jpg 40
+    ```
