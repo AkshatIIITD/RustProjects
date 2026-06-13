@@ -1,0 +1,1 @@
+This repository stores all the rust projects that I will create, out of hobby ofc :)
