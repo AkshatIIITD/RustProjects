@@ -45,10 +45,10 @@ fn main() -> Result<(), Box<dyn error::Error>> {
         args[2].parse().expect("Threshold must be a valid number between 0 and 255")
     } else {
         // Dynamic Average Calculation
-        println!("No threshold provided");
+        eprintln!("No threshold provided");
         let sum: u64 = grayscale_vec.iter().map(|&pixel| pixel as u64).sum();
         let average = sum / (grayscale_vec.len() as u64);
-        println!("Calculated average brightness: {}", average);
+        eprintln!("Calculated average brightness: {}", average);
         average as u8
     };
 
